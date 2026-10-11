@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <a href="profile.html">Bio</a>
+            <a href="profile.html#skills">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <form method="get" action="#">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <fieldset>
+            <legend>Preferred contact</legend>
+            <label><input type="radio" name="contact_method" value="email" required> Email</label>
+            <label><input type="radio" name="contact_method" value="phone"> Phone</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Interests</legend>
+            <label><input type="checkbox" name="interests[]" value="web"> Web Development</label>
+            <label><input type="checkbox" name="interests[]" value="mobile"> Mobile Apps</label>
+        </fieldset>
+
+        <label for="topic">Topic</label>
+        <select id="topic" name="topic">
+            <option value="">— Choose —</option>
+            <option value="project">School Activity</option>
+            <option value="thesis">Task</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <table>
+        <caption>My School Projects</caption>
+        <thead>
+            <tr>
+                <th scope="col">Project</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Student Portal</th>
+                <td>Web Systems</td>
+                <td>2026</td>
+            </tr>
+            <tr>
+                <th scope="row">Inventory System</th>
+                <td>OOP</td>
+                <td>2025</td>
+            </tr>
+            <tr>
+                <th scope="row">Library Database</th>
+                <td>DBMS</td>
+                <td>2025</td>
+            </tr>
+            <tr>
+                <th scope="row">Calculator App</th>
+                <td>Mobile Dev</td>
+                <td>2025</td>
+            </tr>
+            <tr>
+                <th scope="row">Portfolio Website</th>
+                <td>Web System and Technology</td>
+                <td>2026</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        <p>© 2026 Adzmeirah Calim Sailila</p>
+    </footer>
+
+</body>
+</html>
